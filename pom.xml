@@ -8,6 +8,7 @@
   <artifactId>ddd</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+
   <modules>
     <module>domain</module>
     <module>application</module>
@@ -21,10 +22,6 @@
     <maven.compiler.target>8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <mybatis-plus.version>3.4.0</mybatis-plus.version>
-    <easyexcel.version>2.2.6</easyexcel.version>
-    <mapstruct.version>1.4.1.Final</mapstruct.version>
-    <testable.version>0.4.10</testable.version>
-    <junit.version>5.6.2</junit.version>
   </properties>
 
 
@@ -32,11 +29,13 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>1.18.16</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
+      <version>4.13.1</version>
     </dependency>
   </dependencies>
 
@@ -61,6 +60,14 @@
         <groupId>org.example</groupId>
         <artifactId>application</artifactId>
         <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.4.0</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>

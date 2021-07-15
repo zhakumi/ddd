@@ -18,12 +18,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.example</groupId>
-      <artifactId>interfaces</artifactId>
+      <artifactId>domain</artifactId>
     </dependency>
   </dependencies>
 

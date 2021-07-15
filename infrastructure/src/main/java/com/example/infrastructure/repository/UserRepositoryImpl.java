@@ -1,8 +1,8 @@
 package com.example.infrastructure.repository;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.domain.entity.UserDO;
-import com.example.domain.repository.UserRepository;
+import com.example.domain.user.entity.UserDO;
+import com.example.domain.user.repository.UserRepository;
 import com.example.infrastructure.mapper.UserMapper;
 import com.example.infrastructure.po.UserPO;
 import org.springframework.stereotype.Service;
@@ -19,8 +19,8 @@ public class UserRepositoryImpl extends ServiceImpl<UserMapper, UserPO> implemen
         // po 2 do
         UserPO po = super.getById(id);
         UserDO userDO = new UserDO();
-        userDO.setId(0L);
-        userDO.setName("2");
+        userDO.setId(po.getId());
+        userDO.setName(po.getName());
         return userDO;
     }
 
@@ -28,9 +28,7 @@ public class UserRepositoryImpl extends ServiceImpl<UserMapper, UserPO> implemen
     public boolean save(UserDO userDO) {
         // do 2 po
         UserPO po = new UserPO();
-        po.setId(0L);
-        po.setName("2");
-        super.save(po);
-        return true;
+        po.setName(userDO.getName());
+        return super.save(po);
     }
 }

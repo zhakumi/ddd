@@ -1,6 +1,6 @@
-package com.example.domain.repository;
+package com.example.domain.user.repository;
 
-import com.example.domain.entity.UserDO;
+import com.example.domain.user.entity.UserDO;
 
 /**
  * @Author: wangcan

@@ -1,4 +1,4 @@
-package com.example.interfaces.vo;
+package com.example.interfaces.user.vo;
 
 import lombok.Data;
 

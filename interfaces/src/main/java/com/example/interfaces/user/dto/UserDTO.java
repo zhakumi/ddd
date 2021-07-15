@@ -1,4 +1,4 @@
-package com.example.interfaces.dto;
+package com.example.interfaces.user.dto;
 
 import lombok.Data;
 
