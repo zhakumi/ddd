@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+    url: jdbc:h2:mem:test
+    username: root
+    password: test
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.infrastructure.po
+
+logging:
+  level:
+    com.example.infrastructure.mapper: debug
