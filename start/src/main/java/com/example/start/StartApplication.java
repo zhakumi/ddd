@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @Date: 2021/7/14 11:45
  */
 @SpringBootApplication
-@MapperScan(basePackages = "com.example.infrastructure.mapper")
+@MapperScan(basePackages = "com.example.infrastructure.*.mapper")
 @ComponentScan(basePackages = "com.example")
 public class StartApplication {
 

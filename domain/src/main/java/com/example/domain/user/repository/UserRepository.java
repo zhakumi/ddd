@@ -11,4 +11,6 @@ public interface UserRepository {
     UserDO getById(Long id);
 
     boolean save(UserDO userDO);
+
+    boolean update(UserDO userDO);
 }
